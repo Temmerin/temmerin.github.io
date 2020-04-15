@@ -1,62 +1,94 @@
+/*Base Settings and initialisation*/
 *{
 	margin: 0;
 	padding: 0;
 	background-color: transparent;
 	text-decoration: none;
 }
+body{
+	background-color: #DDDDDD;
+	display: grid;
+	grid-template-rows: 6.2em auto 2.5em;
+}
 
+/*Heading declarations*/
 h1{
 	font-family: "Times New Roman", Times, serif;
 	font-size: 2.5em;
 }
-
 h2{
 	font-family: "Times New Roman", Times, serif;
 	font-size: 1.5em;
 }
-
 h3{
 	font-family: ariel, sans-serif;
 	fontsize: 1.2em;
 }
 
-div{
-	
-}
-.header{
-	padding: 1.5em 0em 0em 4em;
+/*Header Section*/
+.Header{
+	padding: 1.5em 4em 0em 4em;
 	background-color: #004367;
+	text-align: right;
 	color: #FFFFFF;
 	display: grid;
-	grid-template-columns: 18em auto;
+	grid-template-columns: 15.7em auto;
 }
-
-.title{
-	text-align: right;
-}
-.navigation{
-	text-align: right;
+.Navigation{
 	padding-top:3em;
-	padding-right: 4em;
 }
 
-body{
-	background-color: #DDDDDD;
-}
-
+/*Links*/
 a{
 	color: #FFFFFF;
 }
-
 a:hover{
 	color: #AAAAAA;
 }
-
 a:active{
 	color: #777777;
 }
 
-@media (max-width: 450px){
+/*Main Body*/
+.Body{
+	padding: 1em 4em 0 4em;
+}
+.Project{
+	display: grid;
+	background-color: #004367;
+	padding: 0.1em;
+	grid-gap: 0.1em;
+	grid-template-rows: auto auto;
+	grid-template-columns: 10em auto;
+	grid-template-areas: 'title title' 'thumbnail description';
+}
+.project > div{
+	background-color: #DDDDDD;
+}
+.name{
+	grid-area: title;
+}
+.thumbnail{
+	grid-area: thumbnail;
+}
+.description{
+	grid-area: description;
+}
+
+/*Page Footer*/
+.Footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding: 0.5em 0 .5em 0;
+	width: 100%;
+	background-color: #004367;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+/*Screen size adjustments*/
+@media screen and (max-width: 600px){
 	.header{
 		padding: 0;
 		grid-template-columns: auto;
@@ -65,5 +97,8 @@ a:active{
 		text-align: center;
 		padding: 0;
 		padding-bottom: 0.5em;
+	}
+	body{
+	grid-template-rows: 7em auto 2.5em;
 	}
 }
