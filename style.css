@@ -56,7 +56,7 @@ a:active{
 	color: #777777;
 }
 
-@media screen and (max-width: 450px){
+@media (max-width: 450px){
 	.header{
 		padding: 0;
 		grid-template-columns: auto;
