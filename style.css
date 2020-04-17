@@ -53,27 +53,6 @@ a:active{
 .Body{
 	padding: 1em 4em 0 4em;
 }
-.Project{
-	display: grid;
-	background-color: #004367;
-	padding: 0.1em;
-	grid-gap: 0.1em;
-	grid-template-rows: auto auto;
-	grid-template-columns: 10em auto;
-	grid-template-areas: 'title title' 'thumbnail description';
-}
-.project > div{
-	background-color: #DDDDDD;
-}
-.name{
-	grid-area: title;
-}
-.thumbnail{
-	grid-area: thumbnail;
-}
-.description{
-	grid-area: description;
-}
 
 /*Page Footer*/
 .Footer{
