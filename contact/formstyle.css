@@ -1,0 +1,27 @@
+Form{
+	padding-top:1em;
+	display: grid;
+	grid-template-areas: 'name iName' 'email iEmail' 'message iMessage';
+	grid-template-columns: 5em 20em;
+	grid-template-rows: auto auto auto;
+}
+
+Label > .name{
+	grid-area: name;
+}
+Label > .email{
+	grid-area: email;
+}
+Label > .message{
+	grid-area: message;
+}
+
+Input > .name{
+	grid-area: iName;
+}
+Input > .email{
+	grid-area: iEmail;
+}
+TextArea > .message{
+	grid-area: iMessage;
+}
